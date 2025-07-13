@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # Hospital Database Schema Project\
+\
+This project is part of an academic assessment for the IFB105 (Database Management) course at Queensland University of Technology (QUT). It demonstrates the design and implementation of a relational database for managing hospital operations using SQL (MySQL syntax).\
+\
+## \uc0\u55357 \u56513  Project Structure\
+\
+- `IFB105_3B_n11266139.sql` \'97 Main SQL script including:\
+  - Database schema creation\
+  - Table definitions with constraints\
+  - View creation\
+  - Sample data insertion\
+  - Constraint violation examples\
+  - Role and privilege management using `GRANT` and `REVOKE`\
+\
+## \uc0\u55356 \u57317  Database Overview\
+\
+The database models a simplified hospital system with the following key entities:\
+\
+- **Doctor** \'97 Stores doctor details including registration and specialization.\
+- **Patient** \'97 Holds patient demographics and links to the attending doctor.\
+- **Appointment** \'97 Manages scheduled interactions between patients and doctors.\
+- **Medication** \'97 Catalog of medications, including dosage and dispensation rules.\
+- **Prescription** \'97 Connects doctors, patients, and medications with administration instructions.\
+\
+### \uc0\u9989  Features Implemented\
+\
+- **Primary and Foreign Key constraints**\
+- **Data validation (e.g., `CHECK`, `ENUM`, and `UNIQUE`)**\
+- **View creation (`Patient_medicationView`) for simplified data access**\
+- **Role-based access control:**\
+  - `administrator`\
+  - `doctor`\
+  - `receptionist`\
+  - `pharmacist`\
+- **Security and access revocation**\
+\
+## \uc0\u55358 \u56810  Sample Queries\
+\
+The script includes sample `INSERT` statements for demonstration, as well as examples of intentional constraint violations to test database rules.\
+\
+## \uc0\u55357 \u57056 \u65039  Technologies\
+\
+- SQL (MySQL syntax)\
+- Compatible with MySQL 8.x\
+\
+## \uc0\u55357 \u56538  Learning Outcomes\
+\
+- Design normalized relational schemas\
+- Implement data integrity constraints\
+- Apply access control using SQL roles\
+- Understand and demonstrate SQL views\
+- Develop test data and validate constraints\
+\
+## \uc0\u55357 \u56516  License\
+\
+This project is part of an academic submission and is intended for educational use only.\
+\
+---\
+\
+}
